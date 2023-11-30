@@ -16,5 +16,4 @@ model = ChatOpenAI(model_name="gpt-3.5-turbo-1106", temperature=0)
 chain = prompt | model
 
 result = chain.invoke({"dish": "カレー"})
-
 print(result.content)
